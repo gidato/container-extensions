@@ -73,7 +73,6 @@ interface ContainerInterface extends PsrContainerInterface
     * @param  bool $includeContainers whether to include containers in list or not (default: exclude)
     * @return array
      */
-    public function getAll(bool $includeContainers = false): array
-    {
+    public function getAll(bool $includeContainers = false): array;
 
 }
