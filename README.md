@@ -1,5 +1,7 @@
-# PSR Container
+# Gidato Container
 
-This repository holds all interfaces/classes/traits related to [PSR-11](https://github.com/container-interop/fig-standards/blob/master/proposed/container.md).
+This repository holds all interfaces for extending PSR container to standardise use of factories, as well as creating new instances.
 
-Note that this is not a container implementation of its own. See the specification for more details.
+This allows common access for use with other container implementations through use of bridges (eg for Laminas and Laravel).
+
+For example, where Laravel uses make(), and Laminas uses build() this interface uses create() and will require a bridge to allow use of either of those services.
