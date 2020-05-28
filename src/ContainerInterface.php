@@ -67,4 +67,13 @@ interface ContainerInterface extends PsrContainerInterface
      */
     public function getKeys(bool $includeContainers = false, bool $includeAliases = false): array;
 
+    /**
+    * Get all built instances
+    *
+    * @param  bool $includeContainers whether to include containers in list or not (default: exclude)
+    * @return array
+     */
+    public function getAll(bool $includeContainers = false): array
+    {
+
 }
